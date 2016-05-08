@@ -22,20 +22,6 @@ MatrixRotator.prototype.rotate = function(direction) {
   // do work here
 
   // must be a valid Direction, see Direction.js
-//   var newMatrix = [];
-//   for (var i =0; i < this.matrix.length; i++){
-//     for (var j=0; j < this.matrix[i].length; j++){
-//     // console.log(this.matrix[i][j]);
-//     var columnPosition = this.matrix[i].length -1 -j;
-//     newMatrix.unshift(this.matrix[i][columnPosition]);
-//         console.log(i+ ' , ' + columnPosition);
-
-
-//     }
-
-//   }
-// console.log(newMatrix);
-
 var newMatrix = [];
 if (direction === Direction.CW){
 for (var i =0; i< this.matrix.length; i++){
@@ -52,8 +38,6 @@ for (var i =0; i< this.matrix.length; i++){
     }
     newMatrix.unshift(newRow);
   }
-
-
 }
 console.log(newMatrix);
 this.matrix = newMatrix;
